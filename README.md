@@ -11,7 +11,7 @@ This is an attempt at a project written using GPT, which simply integrates the t
 Let me browse the directory, or directly copy the directory address to the prompt box.
 
 使用打标得到简单的结果
-Use tagging to obtain simple results.
+Use "tagging" to obtain simple results.
 
 使用给我用力打标得到详细的结果
 Use the feature to "tag forcefully" to obtain detailed results.
@@ -20,13 +20,15 @@ Use the feature to "tag forcefully" to obtain detailed results.
 Tag like Tangseng to get verbose results.
 
 使用自定义，并填入自定义词来使用第三方微调模型，如果有自定义打标触发词的话
-Use custom settings and enter custom terms to use third-party fine-tuned models, if there are custom tagging trigger words.
+Use custom settings and enter custom trigger words to use third-party fine-tuned models, if there are custom tagging trigger words.
 
 将需要增加的Florence-2模型的目录放入**_internal\model‸**的目录下，刷新后就能看到，选择使用
 Place the directory of the Florence-2 model to be added into the _internal\model directory, refresh to see it, then select to use.
 
 覆盖可以覆盖有标签的文件，当然也能跳过
 Overwrite can cover files with labels, or it can be skipped.
+
+现在支持多batch打标了，4090 24batches可以做到简单打标最快0.12秒一张，复杂打标也只需要0.36秒一张，可谓极速！
 
 处理子文件夹将迭代文件夹下所有子文件夹的图片
 Processing subfolders will iterate through the images in all subfolders under the folder.
